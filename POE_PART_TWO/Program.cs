@@ -56,7 +56,7 @@ namespace POE_PART_TWO
             public void AddRecipe()
 
             {
-
+                Console.ForegroundColor = ConsoleColor.Green;
                 Recipe recipe = new Recipe();
 
                 recipe.EnterRecipeDetails();
@@ -544,8 +544,9 @@ namespace POE_PART_TWO
                 while (continueProgram)
 
                 {
+                    { Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("============Let's Start Cooking!============");
-                    Console.WriteLine("============================================");
+                    Console.WriteLine("============================================"); }
  
                         Console.WriteLine("1. Add a Recipe");
 
@@ -664,7 +665,7 @@ namespace POE_PART_TWO
             static void OnRecipeCaloriesExceeded(string recipeName, double totalCalories)
 
             {
-
+               
                 Console.WriteLine($"Warning: Recipe '{recipeName}' exceeds 300 calories ({totalCalories} calories).");
 
             }
