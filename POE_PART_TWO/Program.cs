@@ -123,11 +123,11 @@ namespace POE_PART_TWO
 
 
             // Event handler for when recipe calories exceed 300 
-
+            
             private void OnRecipeCaloriesExceeded(string recipeName, double totalCalories)
 
             {
-                Console.ForegroundColor = ConsoleColor.Red;
+               
                 Console.WriteLine($"Warning: Recipe '{recipeName}' exceeds 300 calories ({totalCalories} calories).");
 
             }
@@ -662,7 +662,7 @@ namespace POE_PART_TWO
             static void OnRecipeCaloriesExceeded(string recipeName, double totalCalories)
 
             {
-               
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Warning: Recipe '{recipeName}' exceeds 300 calories ({totalCalories} calories).");
 
             }
