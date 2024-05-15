@@ -6,11 +6,14 @@ using System.Collections.Generic;
 
 namespace POE_PART_TWO
 
+
 {
+
 
     namespace Recipe
 
     {
+
 
         // Delegate for notifying when a recipe exceeds 300 calories 
 
@@ -19,7 +22,7 @@ namespace POE_PART_TWO
 
 
         // Class to manage recipes 
-        
+
         class RecipeManager
 
         {
@@ -541,8 +544,10 @@ namespace POE_PART_TWO
                 while (continueProgram)
 
                 {
-
-                    Console.WriteLine("1. Add a Recipe");
+                    Console.WriteLine("============Let's Start Cooking!============");
+                    Console.WriteLine("============================================");
+ 
+                        Console.WriteLine("1. Add a Recipe");
 
                     Console.WriteLine("2. Display All Recipes");
 
@@ -667,6 +672,4 @@ namespace POE_PART_TWO
         }
 
     }
-
 }
-
