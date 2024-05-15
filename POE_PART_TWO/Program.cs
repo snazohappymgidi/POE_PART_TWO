@@ -565,7 +565,7 @@ namespace POE_PART_TWO
 
                     string option = Console.ReadLine();
 
-
+                    Console.WriteLine("============================================");
 
                     switch (option)
 
@@ -576,6 +576,7 @@ namespace POE_PART_TWO
                             recipeManager.AddRecipe();
 
                             break;
+                            Console.WriteLine("============================================");
 
                         case "2":
 
