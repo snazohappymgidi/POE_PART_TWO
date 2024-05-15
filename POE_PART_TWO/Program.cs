@@ -73,7 +73,7 @@ namespace POE_PART_TWO
             public void DisplayAllRecipes()
 
             {
-
+                Console.ForegroundColor = ConsoleColor.Blue;
                 recipes.Sort(); // Sort recipes alphabetically by name 
 
                 Console.WriteLine("Recipes:");
@@ -127,7 +127,7 @@ namespace POE_PART_TWO
             private void OnRecipeCaloriesExceeded(string recipeName, double totalCalories)
 
             {
-
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Warning: Recipe '{recipeName}' exceeds 300 calories ({totalCalories} calories).");
 
             }
